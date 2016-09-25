@@ -155,7 +155,20 @@ bar {
         status_command i3status
         tray_output primary
 }
+#layout ar/en
 exec --no-startup-id "setxkbmap -option grp:switch,grp:alt_shift_toggle us,ar"
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
+
+#kill active window
+bindsym $ms+k kill
+
+
+#rofi
+bindsym $ms+r exec rofi -show run
+bindsym $ms+w exec rofi -show window
+
+#snippets launcher
+bindsym $ms+i exec rofi -modi "Snippets:rofisnippets" -show Snippets
+
