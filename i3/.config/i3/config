@@ -166,12 +166,12 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 #rofi
 bindsym $alt+r exec rofi -show run
 bindsym $alt+w exec rofi -show window
-bindsym $alt+m exec rofi -modi "MathExpr:mathexpr" -show MathExpr 
-
+#
 #snippets launcher
 #bindsym $ms+i exec rofi -modi "Snippets:rofisnippets" -show Snippets
 bindsym $alt+m exec rofi -modi "MathCalc:mathexpr" -show MathCalc
 bindsym $alt+s exec rofi -modi "SearchDuck:ducksearch" -show SearchDuck
+
 #i3lock
 bindsym $alt+l exec i3lock 
 exec xautolock -time 1 -locker '/usr/bin/i3lock' &
