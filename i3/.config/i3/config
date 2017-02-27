@@ -171,6 +171,7 @@ bindsym $alt+w exec rofi -show window
 #bindsym $ms+i exec rofi -modi "Snippets:rofisnippets" -show Snippets
 bindsym $alt+m exec rofi -modi "MathCalc:mathexpr" -show MathCalc
 bindsym $alt+s exec rofi -modi "SearchDuck:ducksearch" -show SearchDuck
+bindsym $alt+k exec rofi -modi "ProcKiller:processkill" -show ProcKiller
 
 #i3lock
 bindsym $alt+l exec i3lock 
