@@ -157,7 +157,9 @@ bar {
         tray_output primary
 }
 #layout ar/en
-exec --no-startup-id "setxkbmap us,ar -option grp:ctrl:nocaps grp:switch grp:alt_shift_toggle"
+
+exec --no-startup-id 'setxkbmap us,ar altgr-intl, grp:shifts_toggle,caps:super,grp_led:caps'
+#exec --no-startup-id "setxkbmap us,ar -option grp:ctrl:nocaps grp:switch grp:alt_shift_toggle"
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
