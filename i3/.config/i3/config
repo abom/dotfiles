@@ -175,6 +175,8 @@ bindsym $alt+m exec rofi -modi "MathCalc:mathexpr" -show MathCalc
 bindsym $alt+s exec rofi -modi "SearchDuck:ducksearch" -show SearchDuck
 bindsym $alt+k exec rofi -modi "ProcKiller:processkill" -show ProcKiller
 
+bindsym $alt+a exec "rofi -show run -sidebar-mode -modi 'window,run,SearchDuck:ducksearch,MathCalc:mathexpr,ProcKiller:processkill'"
+
 #i3lock
 bindsym $alt+l exec i3lock 
 exec xautolock -time 1 -locker '/usr/bin/i3lock' &
