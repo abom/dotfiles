@@ -158,8 +158,7 @@ bar {
 }
 #layout ar/en
 
-exec --no-startup-id 'setxkbmap us,ar altgr-intl, grp:shifts_toggle,caps:super,grp_led:caps'
-#exec --no-startup-id "setxkbmap us,ar -option grp:ctrl:nocaps grp:switch grp:alt_shift_toggle"
+exec --no-startup-id "setxkbmap us,ar -option grp:ctrl:nocaps grp:switch grp:alt_shift_toggle"
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
@@ -173,10 +172,12 @@ bindsym $alt+w exec rofi -show window
 #bindsym $ms+i exec rofi -modi "Snippets:rofisnippets" -show Snippets
 bindsym $alt+m exec rofi -modi "MathCalc:mathexpr" -show MathCalc
 bindsym $alt+s exec rofi -modi "SearchDuck:ducksearch" -show SearchDuck
-bindsym $alt+k exec rofi -modi "ProcKiller:processkill" -show ProcKiller
+bindsym $alt+k exec rofi -fuzzy -modi "ProcKiller:processkill" -show ProcKiller
 
 bindsym $alt+a exec "rofi -show run -sidebar-mode -modi 'window,run,SearchDuck:ducksearch,MathCalc:mathexpr,ProcKiller:processkill'"
 
 #i3lock
 bindsym $alt+l exec i3lock 
-exec xautolock -time 1 -locker '/usr/bin/i3lock' &
+#exec xautolock -time 1 -locker '/usr/bin/i3lock' &
+
+focus_follows_mouse  no
