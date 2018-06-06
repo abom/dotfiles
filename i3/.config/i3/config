@@ -172,7 +172,7 @@ bindsym $alt+w exec rofi -show window
 #bindsym $ms+i exec rofi -modi "Snippets:rofisnippets" -show Snippets
 bindsym $alt+m exec rofi -modi "MathCalc:mathexpr" -show MathCalc
 bindsym $alt+s exec rofi -modi "SearchDuck:ducksearch" -show SearchDuck
-bindsym $alt+k exec rofi -fuzzy -modi "ProcKiller:processkill" -show ProcKiller
+bindsym $alt+k exec rofi -modi "ProcKiller:processkill" -show ProcKiller
 
 bindsym $alt+a exec "rofi -show run -sidebar-mode -modi 'window,run,SearchDuck:ducksearch,MathCalc:mathexpr,ProcKiller:processkill'"
 
