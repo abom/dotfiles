@@ -34,7 +34,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -163,11 +163,12 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
+bindsym $alt+f exec pcmanfm
 
 #rofi
 bindsym $alt+r exec rofi -show run
 bindsym $alt+w exec rofi -show window
-#
+
 #snippets launcher
 #bindsym $ms+i exec rofi -modi "Snippets:rofisnippets" -show Snippets
 bindsym $alt+m exec rofi -modi "MathCalc:mathexpr" -show MathCalc
