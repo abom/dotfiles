@@ -181,3 +181,7 @@ bindsym $alt+l exec i3lock
 #exec xautolock -time 1 -locker '/usr/bin/i3lock' &
 
 focus_follows_mouse  no
+
+exec --no-startup-id nm-applet
+exec --no-startup-id volumeicon
+
