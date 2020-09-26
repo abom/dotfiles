@@ -173,7 +173,7 @@ bindsym $alt+w exec rofi -show window
 bindsym $alt+m exec rofi -modi "MathCalc:mathexpr" -show MathCalc
 bindsym $alt+s exec rofi -modi "SearchDuck:ducksearch" -show SearchDuck
 bindsym $alt+k exec rofi -modi "ProcKiller:processkill" -show ProcKiller
-bindsym $alt+v exec rofi -modi "YouTubeVideo:youtubevid" -show YouTubeVideo
+bindsym $alt+v exec youtubevid
 
 bindsym $alt+a exec "rofi -show run -sidebar-mode -modi 'window,run,SearchDuck:ducksearch,MathCalc:mathexpr,ProcKiller:processkill'"
 
